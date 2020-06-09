@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Canteen"
+        android:id="@+id/canteen_list_item"
+        android:icon="@drawable/ic_canteen_logo"/>
+    <item android:title="Orders"
+        android:id="@+id/order_item"
+        android:icon="@drawable/ic_orders_logo"/>
+    <item android:title="Favourite"
+        android:id="@+id/favourite_items"
+        android:icon="@drawable/ic_loved_items_logo"/>
+    <item android:title="Account"
+        android:id="@+id/account_item"
+        android:icon="@drawable/ic_myac_logo"/>
+
+
+</menu>

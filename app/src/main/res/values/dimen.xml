@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo">30dp</dimen>
+    <dimen name="contents_size">19sp</dimen>
+    <dimen name="btnround_size">12dp</dimen>
+    <dimen name ="stroke_size">5dp</dimen>
+    <dimen name ="heading_size">28sp</dimen>
+    <dimen name ="viewrounded_size">25dp</dimen>
+    <dimen name="icon_width_height">38dp</dimen>
+    <dimen name="padding_drawable_logo">12dp</dimen>
+</resources>

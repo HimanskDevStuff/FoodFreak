@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodfreak">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo_main_square"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_logo_main_circle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".com.foodfreak.main.user.Cart_student"></activity>
+        <activity android:name=".com.foodfreak.main.admin.Admin_home_page" />
+        <activity android:name=".com.foodfreak.main.admin.otp_verification_admin" />
+        <activity android:name=".com.foodfreak.main.admin.admin_signup" />
+        <activity android:name=".com.foodfreak.main.user.Canteeen_menu" />
+        <activity android:name=".com.foodfreak.main.user.Home_page" />
+        <activity android:name=".com.foodfreak.main.user.Otp_verification" />
+        <activity android:name=".com.foodfreak.main.user.Succesfully_sign_up" />
+        <activity android:name=".com.foodfreak.main.user.student_signup" />
+        <activity android:name=".com.foodfreak.main.admin.admin_login" />
+        <activity android:name=".com.foodfreak.main.user.Login_student" />
+        <activity android:name=".com.foodfreak.main.user.MainActivity" />
+        <activity android:name=".com.foodfreak.main.user.SplashScreen_foodfreak">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

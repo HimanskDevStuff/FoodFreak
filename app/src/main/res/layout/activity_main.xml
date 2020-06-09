@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".com.foodfreak.main.user.MainActivity"
+    android:fillViewport="true"
+    >
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/cons">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/constraint_layout_main_activity">
+
+
+          <androidx.constraintlayout.widget.Guideline
+              android:id="@+id/guideline"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              app:layout_constraintGuide_begin="20dp"
+              app:layout_constraintGuide_percent="0.0" />
+
+          <androidx.constraintlayout.widget.Guideline
+              android:id="@+id/guideline2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              app:layout_constraintGuide_begin="20dp"
+              app:layout_constraintGuide_percent="0.27" />
+
+          <View
+              android:id="@+id/view5"
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:background="@drawable/home_view_shape"
+              app:layout_constraintBottom_toTopOf="@+id/guideline2"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="1.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_bias="1.0" />
+
+
+          <ImageView
+              android:id="@+id/logo_image"
+              android:layout_width="wrap_content"
+              android:layout_height="0dp"
+              app:layout_constraintBottom_toTopOf="@+id/guideline2"
+              app:layout_constraintEnd_toEndOf="@+id/view5"
+              app:layout_constraintHorizontal_bias="0.496"
+              app:layout_constraintStart_toStartOf="@+id/view5"
+              app:layout_constraintTop_toTopOf="@+id/guideline"
+              app:layout_constraintVertical_bias="1.0"
+              app:srcCompat="@drawable/ic_food_freak" />
+
+          <TextView
+              android:id="@+id/heading_tv_1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="90dp"
+              android:layout_marginLeft="90dp"
+              android:layout_marginTop="24dp"
+              android:layout_marginEnd="90dp"
+              android:layout_marginRight="90dp"
+              android:text="@string/fs_heading_1"
+              android:textAllCaps="true"
+              android:textColor="@android:color/black"
+              android:textSize="@dimen/heading_size"
+              app:fontFamily="@font/archivo_black"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.52"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+          <TextView
+              android:id="@+id/heading_tv_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/fs_heading_2"
+              android:textSize="@dimen/contents_size"
+              android:textStyle="italic"
+              app:layout_constraintEnd_toEndOf="@+id/heading_tv_1"
+              app:layout_constraintStart_toStartOf="@+id/heading_tv_1"
+              app:layout_constraintTop_toBottomOf="@+id/heading_tv_1" />
+
+          <TextView
+              android:id="@+id/heading_tv_3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/fs_heading_3"
+              android:textColor="@android:color/holo_purple"
+              android:textSize="@dimen/contents_size"
+              android:textStyle="italic"
+              app:layout_constraintEnd_toEndOf="@+id/heading_tv_2"
+              app:layout_constraintHorizontal_bias="0.59"
+              app:layout_constraintStart_toStartOf="@+id/heading_tv_2"
+              app:layout_constraintTop_toBottomOf="@+id/heading_tv_2" />
+
+          <Button
+              android:id="@+id/adminloginbtn"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="24dp"
+              android:layout_marginLeft="24dp"
+              android:layout_marginTop="55dp"
+              android:layout_marginEnd="24dp"
+              android:layout_marginRight="24dp"
+              android:background="@drawable/button_selector"
+              android:text="@string/fs_adminloginbtn"
+              android:textAllCaps="false"
+              android:textSize="@dimen/contents_size"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/heading_tv_3" />
+
+          <Button
+              android:id="@+id/studentloginbtn"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="24dp"
+              android:layout_marginLeft="24dp"
+              android:layout_marginTop="24dp"
+              android:layout_marginEnd="24dp"
+              android:layout_marginRight="24dp"
+              android:background="@drawable/button_selector"
+              android:text="@string/fs_studentloginbtn"
+              android:textAllCaps="false"
+              android:textSize="@dimen/contents_size"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/adminloginbtn" />
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:id="@+id/amity_logo_wc"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.937"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/studentloginbtn"
+              app:layout_constraintVertical_bias="0.913"
+              app:srcCompat="@drawable/ic_amity_university_vector_logo_fs" />
+
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+      <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:id="@+id/pb_main_activity"
+          android:visibility="gone" />
+
+
+  </FrameLayout>
+
+
+</ScrollView>

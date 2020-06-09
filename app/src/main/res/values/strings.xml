@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Food Freak</string>
+    <string name="cb_rem_me">Remember me</string>
+    <string name="signup_heading_1">Create Account</string>
+    <string name="fs_heading_1">Welcome !</string>
+    <string name="fs_heading_2">Hate the queues in canteen?</string>
+    <string name="fs_heading_3">We have got you covered.</string>
+    <string name="fs_adminloginbtn">Admin Log In</string>
+    <string name="fs_studentloginbtn">Student Log In</string>
+    <string name="good_mrn_msg">Good Morning,\nHimanshu!</string>
+    <string name="time_for_msg">It\'s time for lunch</string>
+    <string name="can_near_you">Canteens near you</string>
+    <string name="text_with_bullet">Text with a \u2022</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
+

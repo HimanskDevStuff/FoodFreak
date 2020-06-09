@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".com.foodfreak.main.user.Login_student"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/head1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Log in to continue"
+            android:textColor="@android:color/black"
+            android:textSize="34sp"
+            android:transitionName="first"
+            app:fontFamily="@font/baloo_thambi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.26" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Enter your mobile number"
+            android:textSize="@dimen/contents_size"
+            android:transitionName="second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/head1"
+            app:layout_constraintTop_toBottomOf="@+id/head1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="605dp"
+            app:layout_constraintGuide_percent="0.78" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameInputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:transitionName="third"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameTextinput_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/userlogo"
+                android:drawablePadding="15dp"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:textSize="@dimen/contents_size"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:transitionName="fourth"
+            app:errorEnabled="true"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/usernameInputlayout"
+            app:layout_constraintTop_toBottomOf="@+id/usernameInputlayout"
+            app:passwordToggleEnabled="true">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordTextinput_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/usernamebackground"
+                android:drawableStart="@drawable/passwordlogo"
+                android:drawableLeft="@drawable/passwordlogo"
+                android:drawablePadding="15dp"
+                android:hint="OTP"
+                android:inputType="textPassword"
+
+                android:textSize="@dimen/contents_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/remember_me_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:checked="true"
+            android:visibility="gone"
+            android:text="@string/cb_rem_me"
+            android:textSize="@dimen/contents_size"
+            android:transitionName="fifth"
+            app:layout_constraintBottom_toBottomOf="@+id/resend_otp_login"
+            app:layout_constraintEnd_toEndOf="@+id/passwordInputlayout"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/resend_otp_login"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInputlayout" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_selector"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textSize="@dimen/contents_size"
+            android:visibility="gone"
+            android:transitionName="seventh"
+            app:layout_constraintEnd_toEndOf="@+id/remember_me_cb"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/resend_otp_login"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar_login" />
+
+        <TextView
+            android:id="@+id/signupnonclickable_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="Don't have an account?"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/contents_size"
+            android:transitionName="eight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline9"
+            app:layout_constraintVertical_bias="0.632" />
+
+        <TextView
+            android:id="@+id/signupclickable_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginRight="75dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Sign Up"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/contents_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/signupnonclickable_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/signupnonclickable_tv"
+            app:layout_constraintTop_toTopOf="@+id/signupnonclickable_tv"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_login"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/remember_me_cb"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toEndOf="@+id/resend_otp_login"
+            app:layout_constraintTop_toBottomOf="@+id/resend_otp_login" />
+
+        <TextView
+            android:id="@+id/resend_otp_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Resend OTP"
+            android:visibility="gone"
+            android:transitionName="sixth"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/contents_size"
+            app:layout_constraintStart_toStartOf="@+id/passwordInputlayout"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInputlayout" />
+
+        <Button
+            android:id="@+id/go_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/button_selector"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="GO"
+            android:textAllCaps="false"
+            android:textSize="@dimen/contents_size"
+            android:transitionName="seventh"
+            app:layout_constraintEnd_toEndOf="@+id/remember_me_cb"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/resend_otp_login"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar_login" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

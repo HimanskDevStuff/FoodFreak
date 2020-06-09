@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Account"
+        android:id="@+id/account_admin"
+        android:icon="@drawable/ic_myac_logo"/>
+    <item android:id="@+id/updateitem"
+        android:icon="@drawable/ic_update_item_admin"
+        android:title="Update Item"/>
+    <item android:id="@+id/additem"
+        android:title="Add New Item"
+        android:icon="@drawable/ic_additem_admin"/>
+
+</menu>

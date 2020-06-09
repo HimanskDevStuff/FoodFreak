@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ProgressBar
+        android:id="@+id/progress_account_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Account_admin_frag"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:orientation="horizontal"
+            tools:targetApi="lollipop">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_myac_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Account"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </Toolbar>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_edit" />
+
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Account_admin_frag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        tools:context=".com.foodfreak.main.admin.Account_admin">
+
+
+        <ImageView
+            android:id="@+id/userphoto_admin"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/userlogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/admin_username_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Username"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/heading_size"
+            app:layout_constraintStart_toEndOf="@+id/userphoto_admin"
+            app:layout_constraintTop_toTopOf="@+id/userphoto_admin" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/userphoto_admin"
+            app:layout_constraintTop_toBottomOf="@+id/userphoto_admin" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="User Info"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/contents_size"
+            app:layout_constraintStart_toStartOf="@+id/view4"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/ic_phone_logo" />
+
+        <ImageView
+            android:id="@+id/id"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@+id/em"
+            app:layout_constraintTop_toBottomOf="@+id/em"
+            app:srcCompat="@drawable/ic_amity_id_logo" />
+
+        <ImageView
+            android:id="@+id/em"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@+id/phone"
+            app:layout_constraintTop_toBottomOf="@+id/phone"
+            app:srcCompat="@drawable/ic_email_logo" />
+
+        <TextView
+            android:id="@+id/mn"
+            android:layout_width="65dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Mobile number"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/phone"
+            app:layout_constraintTop_toTopOf="@+id/phone" />
+
+        <TextView
+            android:id="@+id/emv"
+            android:layout_width="34dp"
+            android:layout_height="13dp"
+            android:text="Email ID"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/mn"
+            app:layout_constraintTop_toTopOf="@+id/em" />
+
+        <TextView
+            android:id="@+id/wi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amizone ID"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/emv"
+            app:layout_constraintTop_toTopOf="@+id/id" />
+
+        <TextView
+            android:id="@+id/admin_phone_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="8448279387"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/mn"
+            app:layout_constraintTop_toBottomOf="@+id/mn" />
+
+        <TextView
+            android:id="@+id/admin_email_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="himanshulpark814@gmail.com"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/emv"
+            app:layout_constraintTop_toBottomOf="@+id/emv" />
+
+        <TextView
+            android:id="@+id/admin_working_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="111935662"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/wi"
+            app:layout_constraintTop_toBottomOf="@+id/wi" />
+
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@+id/view4"
+            app:layout_constraintStart_toStartOf="@+id/id"
+            app:layout_constraintTop_toBottomOf="@+id/admin_working_id_tv" />
+
+        <Button
+            android:id="@+id/logout_admin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Log Out"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/contents_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "717369350125",
+    "firebase_url": "https://food-freak-af540.firebaseio.com",
+    "project_id": "food-freak-af540",
+    "storage_bucket": "food-freak-af540.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717369350125:android:103f6558080a920823f9e4",
+        "android_client_info": {
+          "package_name": "com.example.foodfreak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717369350125-n56moeb2kap3u6no5lerdrddq6ilp5ub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodfreak",
+            "certificate_hash": "8fa5f578bdb85921beef2e2cdfe10be74cbc5829"
+          }
+        },
+        {
+          "client_id": "717369350125-70999eddhvm9hlpa1vufr3hb1hdf9dlp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkCWaqCTk2aGldBh8UXwpWk6CxnaJQGtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717369350125-70999eddhvm9hlpa1vufr3hb1hdf9dlp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
