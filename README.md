@@ -30,7 +30,7 @@ We hope that implementation of our methodology and ideas in the right way will e
 
 ## How to install the app
 
-1. Download apk of application from [here](https://github.com/HimanskDevStuff/FoodFreak/blob/master/app/FoodFreak-v-1.0.apk).
+1. Download apk of application from [here](https://github.com/HimanskDevStuff/FoodFreak/blob/master/app/FoodFreak-v-1.0.apk?raw=true).
 2. Open the apk file and click on install app.
 3. After completing the installation part , start the app.
 
