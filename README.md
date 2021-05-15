@@ -2,15 +2,14 @@
 
 ![ic_launcher_logo_main_circle](https://user-images.githubusercontent.com/66693732/84262687-a782aa80-ab3b-11ea-8ebf-bfb8d40d61a1.png)
 
-Food Freak is a online canteen ordering application for college students and staffs.
+Food Freak is an online canteen ordering application for college students and staffs.
 
 ## The main objective of the application :
-The current manual ordering process in canteen have many disadvantages which some time even leads to loss. It is tedious and requires lot of manual work which can be replaced with automation. I have successfully developed "Food Freak" a android application which will be going to cut manual work in half. There will be no need of following the traditional token system, it will be completely replaced with the application. The user will also don't have to face huge queues both at canteen and token counter.
-The data which is written on register everyday at the counter will be replaced with online database which is going to keep track of all the orders throughout the day. The access to the database will be on the finger tips of canteen manager. 
 
-The objective of our project is to minimize the time and effort of students and staffs when they order food in canteen by automating the existing manual process.
+The current manual ordering process in the canteen has many disadvantages which sometimes even leads to loss. It is tedious and requires a lot of manual work which can be replaced with automation. I have successfully developed "Food Freak" and an android application which will cut the manual work in half. There will be no need for following the traditional token system, it will be completely replaced with the application. The user will not have to face huge queues both at the canteen and the token counter.
+The data which is written on the register every day at the counter will be replaced with an online database which is going to keep track of all the orders throughout the day. The access to the database will be at the finger tips of the canteen manager. 
 
-We hope that implementation of our methodology and ideas in the right way will eliminate many problems faced by the management team in the canteen.
+The objective of my project is to minimize the time and effort of students and staff when they order food in the canteen by automating the existing manual process.
 
 ## Food Feak includes the following features :
 - User Register/Login for both admin and student.
@@ -22,15 +21,15 @@ We hope that implementation of our methodology and ideas in the right way will e
 - and alot more....
 
 ## Future improvements
-1. Improved performance : Sometimes due to slow internet connection our application takes lot of time to fetch data from server so it leads to delay which needs to be fixed
-2. Adding payment option: We have not integrated a inbuilt payment system in our application which when Implemented will make the paying to canteens alot easier.
+1. Improved performance : Sometimes due to slow internet connection the application takes alot of time to fetch the data from the server so it leads to delay which needs to be fixed
+2. Adding payment option: I have not integrated a inbuilt payment system in the application which when Implemented will be implemented.
 3. Push notification: Push notification will help user to get updates without even opening the application.
 4. Adding bestseller option : Bestseller items will help to know which item is most liked in that canteen
 5. Integrate google login: It will ease the process of creating account.
 
 ## How to install the app
 
-1. Download the apk of application from [here](https://github.com/HimanskDevStuff/FoodFreak/blob/master/app/FoodFreak-v-1.0.apk?raw=true).
+1. Download the apk of the application from [here](https://github.com/HimanskDevStuff/FoodFreak/blob/master/app/FoodFreak-v-1.0.apk?raw=true).
 2. Open the apk file and click on install app.
 3. After completing the installation part , start the app.
 
